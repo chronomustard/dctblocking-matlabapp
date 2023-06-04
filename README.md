@@ -10,7 +10,7 @@ In DCT Variable Blocking, the size of the blocks can be adjusted based on differ
 
 ## Features
 
-- 4x4, 8x8, and 16x16 block sizes.
+- Multiple block sizes: 4x4, 8x8, and 16x16 block sizes.
 - DCT coefficient manipulation: Users can modify the DCT coefficients to control the compression ratio and image quality.
 - Image reconstruction: The simulation includes functionality to reconstruct the compressed image using the modified DCT coefficients.
 
