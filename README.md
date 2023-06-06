@@ -1,45 +1,43 @@
-# DCT Variable Blocking Simulation
+# Static DCT Blocking Simulation
 
-This repository provides a MATLAB implementation of a DCT (Discrete Cosine Transform) variable blocking simulation. It allows users to customize DCT coefficients for image compression and analysis.
+This repository provides a MATLAB simulation for static DCT (Discrete Cosine Transform) blocking. The simulation allows customization of DCT coefficients and supports several static blocking sizes, including 4x4, 8x8, and 16x16.
 
-## What is DCT Variable Blocking?
+## What is Static DCT Blocking?
 
-DCT Variable Blocking is a technique used in image and video compression algorithms, where the input image is divided into blocks of different sizes, and the DCT is applied to each block independently. The DCT transforms spatial information into frequency information, allowing for efficient compression by discarding high-frequency components.
+Static DCT blocking is a technique used in image and video compression algorithms. It involves dividing an image or video frame into fixed-size blocks and applying the DCT on each block individually. The DCT converts spatial information into frequency information, enabling efficient compression by representing the image or video in terms of its frequency components.
 
-In DCT Variable Blocking, the size of the blocks can be adjusted based on different criteria. Generally, larger blocks are used for smoother areas of the image, where high-frequency details are less significant, while smaller blocks are used for more detailed areas.
+By employing static DCT blocking, the compression algorithm can exploit the similarity of frequency content within a block. Smaller block sizes, such as 4x4, capture more local details but result in larger compression artifacts. On the other hand, larger block sizes, such as 16x16, capture more global features but may lose finer details. The choice of block size depends on the specific requirements of the application.
 
-## Features
+## Simulation Features
 
-- Multiple block sizes: 4x4, 8x8, and 16x16 block sizes.
-- DCT coefficient manipulation: Users can modify the DCT coefficients to control the compression ratio and image quality.
-- Image reconstruction: The simulation includes functionality to reconstruct the compressed image using the modified DCT coefficients.
+This simulation offers the following features:
 
-## Requirements
+1. Customization of DCT coefficients: Users can modify the DCT coefficients to experiment with different compression effects. The coefficients determine the contribution of each frequency component to the reconstructed image or video.
 
-To run the simulation, you need to have MATLAB installed on your system. The code has been tested on MATLAB R2021a and later versions.
+2. Support for multiple blocking sizes: The simulation supports three static blocking sizes: 4x4, 8x8, and 16x16. Users can choose the desired block size according to their preference or application requirements.
 
-## Usage
+## Getting Started
 
-1. Clone or download this repository to your local machine.
-2. Open MATLAB and navigate to the cloned repository directory.
-3. Run the matlab app (`main.mlapp`) to execute the simulation.
-4. Customize the DCT coefficients and block sizes in the provided MATLAB app.
-5. Click start on the app to execute the simulation.
-6. The compressed image will be generated, and you can evaluate the results based on your modifications.
+To run the simulation, follow these steps:
 
-## Contributing
+1. Clone this repository to your local machine or download it as a ZIP file.
 
-Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+2. Ensure you have MATLAB installed on your system.
+
+3. Open the MATLAB application and navigate to the directory where you cloned or extracted the repository.
+
+4. Open the `dct_simulation.m` file in MATLAB.
+
+5. Run the simulation by executing the `dct_simulation` script.
+
+6. Modify the DCT coefficients as desired to experiment with different compression effects.
+
+7. The simulation will generate the compressed output and display the reconstructed image.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This simulation is released under the [MIT License](LICENSE).
 
-## Acknowledgments
+## Contribution
 
-- The DCT Variable Blocking simulation is based on the work of several researchers in the field of image and video compression.
-- We acknowledge the open-source community for providing valuable resources and libraries for MATLAB development.
-
----
-
-Feel free to customize the README.md file according to your specific implementation and requirements.
+Contributions to this project are welcome
